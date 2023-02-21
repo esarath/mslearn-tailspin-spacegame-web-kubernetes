@@ -74,7 +74,7 @@ stages:
         kubernetesServiceConnection: 'Kubernetes Cluster Connection'
         namespace: 'default'
         manifests: |
-          $(Pipeline.Workspace)/manifests/deployment.yml
+          $(PIPELINE.WORKSPACE)/manifests/deployment.yml
           $(Pipeline.Workspace)/manifests/service.yml
         imagePullSecrets: |
           $(imagePullSecret)
