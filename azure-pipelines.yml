@@ -49,12 +49,11 @@ stages:
     pool:
       vmImage: 'ubuntu-20.04'
       environment: 'spike.default'
-    variables:
-    - group: Release
-    strategy:
-     runOnce:
-      deploy:
-        steps:
+      variables:
+      - group: Release
+      strategy:
+        runOnce:
+         steps:
            - download: current
              artifact: manifests
            - task: AzureWebAppContainer@1
