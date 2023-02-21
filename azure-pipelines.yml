@@ -1,7 +1,7 @@
 trigger: 
  'main'
 
- variables:
+variables:
   buildConfiguration: 'Release'
   leaderboardRepository: 'leaderboard'
   webRepository: 'web'
